@@ -24,7 +24,7 @@
           h1, h2, h3, h4, h5, h6, .dot-matrix {
                   font-family: 'Doto', sans-serif !important;
                   text-transform: uppercase;
-                  font-variation-settings: "ROND" 0; /* Ajuste específico de Doto */
+                  font-variation-settings: "ROND" 0;
               }
 
 
@@ -90,7 +90,6 @@
                 margin-top: 4px;
             }
 
-            /* Scrollbar minimalista */
             .no-scrollbar::-webkit-scrollbar { display: none; }
             .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
@@ -102,7 +101,6 @@
     </style>
   </head>
   <body class="p-4 md:p-8 min-h-screen flex flex-col justify-between">
-    <!-- HEADER STATUS -->
     <header class="flex justify-between items-start w-full">
       <div class="flex items-center gap-4 nothing-widget px-6 py-3">
         <div class="glyph-led"></div>
@@ -120,10 +118,8 @@
       </div>
     </header>
 
-    <!-- MAIN HUB -->
     <main class="flex-grow flex flex-col justify-center items-center py-12">
       <div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-4 gap-4">
-        <!-- HERO WIDGET -->
         <div
           class="md:col-span-2 md:row-span-2 nothing-widget p-10 flex flex-col justify-between aspect-square md:aspect-auto"
         >
@@ -133,7 +129,7 @@
               MÉXICO
             </h2>
             <p class="text-xs text-zinc-400 max-w-xs">
-              EXPLORACIÓN DE PATRIMONIO SINCRONIZADA POR EL EQUIPO UAQ MÉXICO.
+              EXPLORACIÓN DE PATRIMONIO DE MÉXICO.
             </p>
           </div>
           <div class="flex gap-2">
@@ -143,7 +139,6 @@
           </div>
         </div>
 
-        <!-- TIME WIDGET -->
         <div
           class="nothing-widget p-8 flex flex-col justify-center items-center text-center"
         >
@@ -152,7 +147,6 @@
           <div class="text-[8px] mt-2 text-red-500">MÉXICO_CENTRO</div>
         </div>
 
-        <!-- DATA WIDGET -->
         <div
           class="nothing-widget p-8 flex flex-col justify-center items-center text-center"
         >
