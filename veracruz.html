@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERACRUZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@900,100&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "DotGothic16", sans-serif !important;
+        text-transform: uppercase;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .dot-matrix {
+        font-family: "Doto", sans-serif !important;
+        text-transform: uppercase;
+        font-variation-settings: "ROND" 0;
+      }
+      :root {
+        --nothing-red: #ff0000;
+        --nothing-black: #000000;
+        --nothing-white: #ffffff;
+      }
+      body {
+        background-color: var(--nothing-black);
+        color: var(--nothing-white);
+        background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
+        background-size: 30px 30px;
+      }
+      .nothing-widget {
+        background: rgba(18, 18, 18, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 36px;
+        backdrop-filter: blur(12px);
+        transition: 0.3s;
+      }
+      .glyph-led {
+        width: 10px;
+        height: 10px;
+        background-color: var(--nothing-red);
+        border-radius: 50%;
+        box-shadow: 0 0 15px var(--nothing-red);
+      }
+      .img-aesthetic {
+        filter: grayscale(100%) brightness(0.8);
+        border-radius: 24px;
+        transition: 0.5s;
+      }
+      .img-aesthetic:hover {
+        filter: grayscale(0%) brightness(1);
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8 min-h-screen flex flex-col">
+    <header class="flex justify-between items-start w-full mb-12">
+      <a
+        href="index.html"
+        class="nothing-widget px-6 py-3 flex items-center gap-4 hover:text-red-500"
+      >
+        <span><-</span> <span>HOME</span>
+      </a>
+      <div class="nothing-widget px-6 py-3 flex items-center gap-4">
+        <div class="glyph-led"></div>
+        <span class="text-sm">VER.GATEWAY</span>
+      </div>
+    </header>
+
+    <main
+      class="flex-grow max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-4 gap-4 mb-24"
+    >
+      <div class="md:col-span-4 nothing-widget p-12 text-center">
+        <h2 class="text-8xl font-black mb-4">VERACRUZ</h2>
+        <p class="text-xs text-red-500 tracking-[0.5em]">LA PUERTA AL MUNDO</p>
+      </div>
+
+      <div
+        class="md:col-span-2 nothing-widget p-8 flex flex-col justify-center"
+      >
+        <span class="text-[8px] text-zinc-500 mb-6">SISTEMA_MARÍTIMO</span>
+        <p class="text-xs text-zinc-400">
+          El primer puerto. Donde la alegría jarocha y el aroma del café de
+          altura crean el ritmo que nos conecta con el horizonte.
+        </p>
+      </div>
+
+      <div class="md:col-span-2 nothing-widget p-4 overflow-hidden h-64">
+        <img
+          src="https://mexicofamilytravel.com/wp-content/uploads/2022/10/Places-to-visit-in-Veracruz-1-elovkof.jpg"
+          class="w-full h-full object-cover img-aesthetic"
+        />
+      </div>
+
+      <div
+        class="md:col-span-4 nothing-widget p-6 flex justify-around items-center text-[10px]"
+      >
+        <div class="flex items-center gap-2">
+          <span>[+]</span> CAFÉ_DE_ALTURA
+        </div>
+        <div class="flex items-center gap-2"><span>[+]</span> MALECÓN_HIST</div>
+        <div class="flex items-center gap-2 text-red-500">
+          <span>[+]</span> SON_JAROCHOS
+        </div>
+      </div>
+    </main>
+
+    <footer class="fixed bottom-0 left-0 w-full flex justify-center pb-4">
+      <nav
+        class="nothing-widget px-8 py-4 flex gap-8 items-center overflow-x-auto no-scrollbar"
+      >
+        <a href="index.html" class="text-[10px] text-zinc-600">INICIO</a>
+        <a href="tlaxcala.html" class="text-[10px] text-zinc-600">TLAXCALA</a>
+        <a href="hidalgo.html" class="text-[10px] text-zinc-600">HIDALGO</a>
+        <a href="queretaro.html" class="text-[10px] text-zinc-600">QUERÉTARO</a>
+        <a href="michoacan.html" class="text-[10px] text-zinc-600">MICHOACÁN</a>
+        <div class="flex flex-col items-center">
+          <a href="veracruz.html" class="text-[10px] text-white">VERACRUZ</a>
+          <div class="w-1 h-1 bg-red-500 rounded-full mt-1"></div>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
