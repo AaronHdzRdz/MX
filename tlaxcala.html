@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TLAXCALA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@900,100&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "DotGothic16", sans-serif !important;
+        text-transform: uppercase;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .dot-matrix {
+        font-family: "Doto", sans-serif !important;
+        text-transform: uppercase;
+        font-variation-settings: "ROND" 0;
+      }
+
+      :root {
+        --nothing-red: #ff0000;
+        --nothing-black: #000000;
+        --nothing-white: #ffffff;
+      }
+
+      body {
+        background-color: var(--nothing-black);
+        color: var(--nothing-white);
+        background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
+        background-size: 30px 30px;
+      }
+      .nothing-widget {
+        background: rgba(18, 18, 18, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 36px;
+        backdrop-filter: blur(12px);
+        transition: 0.3s;
+      }
+      .nothing-widget:hover {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+      .glyph-led {
+        width: 10px;
+        height: 10px;
+        background-color: var(--nothing-red);
+        border-radius: 50%;
+        box-shadow: 0 0 15px var(--nothing-red);
+      }
+      .img-aesthetic {
+        filter: grayscale(100%);
+        transition: 0.5s;
+        border-radius: 24px;
+      }
+      .img-aesthetic:hover {
+        filter: grayscale(0%);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8 min-h-screen flex flex-col">
+    <header class="flex justify-between items-start w-full mb-12">
+      <a
+        href="index.html"
+        class="nothing-widget px-6 py-3 flex items-center gap-4 hover:text-red-500"
+      >
+        <span><-</span> <span>VOLVER_AL_NÚCLEO</span>
+      </a>
+      <div class="nothing-widget px-6 py-3 flex items-center gap-4">
+        <div class="glyph-led"></div>
+        <span class="text-sm">TLAXCALA.SYS</span>
+      </div>
+    </header>
+
+    <main
+      class="flex-grow max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-4 mb-24"
+    >
+      <div
+        class="md:col-span-2 nothing-widget p-10 flex flex-col justify-between"
+      >
+        <span class="text-[8px] text-zinc-500">ARCHIVO_HISTÓRICO</span>
+        <div>
+          <h2 class="text-6xl font-black mb-6">LA CUNA</h2>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Punto de origen del mestizaje. Tlaxcala no es un error de sistema,
+            es la alianza que definió el código fuente de América.
+          </p>
+        </div>
+      </div>
+
+      <div class="nothing-widget p-4 overflow-hidden">
+        <img
+          src="https://tse1.mm.bing.net/th/id/OIP.aKwfk3feaFl6ejmcu9qcjQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+          class="w-full h-full object-cover img-aesthetic"
+        />
+      </div>
+
+      <div
+        class="nothing-widget p-8 flex flex-col justify-center border-dashed"
+      >
+        <h3 class="text-red-500 text-[10px] mb-4">SITIOS_DE_INTERÉS</h3>
+        <ul class="text-[10px] space-y-2">
+          <li>-> CACAXTLA</li>
+          <li>-> VAL'QUIRICO</li>
+          <li>-> CENTRO_HISTORICO</li>
+        </ul>
+      </div>
+
+      <div
+        class="md:col-span-2 nothing-widget p-8 flex items-center justify-between group cursor-pointer"
+      >
+        <span class="text-[10px]">RECURSOS_EXTERNOS</span>
+        <a
+          href="https://www.tlaxcala.gob.mx"
+          target="_blank"
+          class="text-xs underline group-hover:text-red-500"
+          >TLAXCALA.GOB.MX</a
+        >
+      </div>
+    </main>
+
+    <footer class="fixed bottom-0 left-0 w-full flex justify-center pb-4">
+      <nav
+        class="nothing-widget px-8 py-4 flex gap-8 items-center overflow-x-auto no-scrollbar"
+      >
+        <a href="index.html" class="text-[10px] text-zinc-600">INICIO</a>
+        <div class="flex flex-col items-center">
+          <a href="tlaxcala.html" class="text-[10px] text-white">TLAXCALA</a>
+          <div class="w-1 h-1 bg-red-500 rounded-full mt-1"></div>
+        </div>
+        <a href="hidalgo.html" class="text-[10px] text-zinc-600">HIDALGO</a>
+        <a href="queretaro.html" class="text-[10px] text-zinc-600">QUERÉTARO</a>
+        <a href="michoacan.html" class="text-[10px] text-zinc-600">MICHOACÁN</a>
+        <a href="veracruz.html" class="text-[10px] text-zinc-600">VERACRUZ</a>
+      </nav>
+    </footer>
+  </body>
+</html>
